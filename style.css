@@ -252,13 +252,16 @@ header h1 em {
 }
 .feedbackScrollContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .feedback {
   background-color: #fafafa;
   padding: 20px 36px;
+  margin: 15px;
   width: 350px;
   border-radius: 15px;
-  margin-right: 40px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
 .feedbackInfo {
@@ -293,6 +296,7 @@ header h1 em {
   letter-spacing: -0.96px;
 }
 footer {
+  position: relative;
   height: 182px;
   background: #fafafa;
   padding: 53px 60px;
@@ -333,4 +337,7 @@ footer {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  position: absolute;
+  right: 100px;
 }
