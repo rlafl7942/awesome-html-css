@@ -101,7 +101,7 @@ header h1 em {
 }
 .infoContainer {
   position: relative;
-  margin: 100px 0px;
+  margin: 100px 0px 0px 0px;
   padding: 100px 120px;
   background: linear-gradient(
     96deg,
@@ -129,11 +129,11 @@ header h1 em {
   position: absolute;
   width: 119px;
   height: 119px;
-  right: 400px;
-  top: 43px;
+  right: 700px;
+  top: 30px;
 }
 .techContainer {
-  padding: 0px 120px;
+  padding: 100px 120px;
 }
 .techInfoContainer {
   display: flex;
@@ -171,4 +171,67 @@ header h1 em {
   width: 100px;
   height: 100px;
   margin: 0px 40px;
+}
+.projectContainer {
+  padding: 80px 120px 120px 120px;
+  background: rgba(244, 244, 244, 0.5);
+}
+.myProjectTitle {
+  color: #403930;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
+  margin-bottom: 32px;
+}
+.myProject {
+  background-color: #e6eeff;
+  border-radius: 24px;
+  height: 350px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.projectInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectTitle {
+  color: #403930;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+.projectInfo {
+  color: #403930;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+.projectLinkContainer {
+  margin-top: 36px;
+}
+
+.projectNotionLink {
+  color: #405ba1;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-decoration-line: underline;
+
+  margin-right: 24px;
+}
+.projectGithubLink {
+  color: #00446a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-decoration-line: underline;
 }
