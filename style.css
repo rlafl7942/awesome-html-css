@@ -292,3 +292,45 @@ header h1 em {
   line-height: 125%; /* 60px */
   letter-spacing: -0.96px;
 }
+footer {
+  height: 182px;
+  background: #fafafa;
+  padding: 53px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  color: var(--Dark, #21243d);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 24px;
+}
+.contactMe {
+  border-radius: 50px;
+  border: 10px solid #bbd5f7;
+  background: linear-gradient(
+    98deg,
+    #bed3ff -10.83%,
+    #d2f3e5 51.79%,
+    #ffebd9 110.76%
+  );
+  text-decoration: none;
+  width: 150px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(64, 57, 48, 0.8);
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
