@@ -53,6 +53,12 @@ header h1 em {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: blink 2s infinite alternate;
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
 }
 .headerLinkContainer {
   display: flex;
@@ -188,7 +194,7 @@ header h1 em {
 .myProject {
   background-color: #e6eeff;
   border-radius: 24px;
-  height: 350px;
+  height: 330px;
   padding: 0px 40px;
   display: flex;
   justify-content: space-between;
@@ -234,6 +240,19 @@ header h1 em {
   font-weight: 600;
   line-height: 150%; /* 30px */
   text-decoration-line: underline;
+}
+.projectImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectImgContainer img {
+  width: 155px;
+  height: 280px;
+  margin-inline: 10px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
 .feedbackContainer {
   padding: 80px 0px 100px 0px;
