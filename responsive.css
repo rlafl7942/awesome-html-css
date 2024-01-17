@@ -1,0 +1,177 @@
+nav {
+  display: flex;
+  height: 60px;
+  padding: 0px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  align-self: stretch;
+  text-transform: uppercase;
+}
+nav a {
+  font-size: 12px;
+}
+header {
+  margin-top: 0;
+  padding: 60px 24px;
+}
+.headerRight {
+  display: none;
+}
+.headerLeft {
+  width: 100%;
+}
+.badge {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 8px 24px;
+  margin: 0px;
+}
+header h1 {
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+  margin: 20px 0px;
+}
+.headerLinkContainer a {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  width: 80px;
+}
+.github {
+  border: 1px solid black;
+}
+.resume {
+  color: #403930;
+  border: 1px solid #403930;
+}
+.infoContainer {
+  margin: 0;
+  padding: 60px 24px;
+}
+.infoTitle {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: -0.36px;
+}
+.superman_icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 97px;
+  top: 36px;
+}
+.info {
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+.techContainer {
+  padding: 60px 24px;
+}
+.techInfoContainer {
+  align-items: flex-start;
+}
+.techTitle {
+  /* sectionTitle */
+  font-size: 24px;
+  letter-spacing: -0.48px;
+}
+.techInfo {
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  text-align: start;
+}
+.iconContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.iconContainer img {
+  width: 80px;
+  height: 80px;
+}
+.projectContainer {
+  padding: 60px 24px;
+}
+.myProjectTitle {
+  font-size: 24px;
+}
+.myProject {
+  padding: 24px 16px;
+  flex-direction: column-reverse;
+}
+.projectImgContainer img {
+  width: 94px;
+  height: 202px;
+}
+.projectTitle {
+  font-size: 24px;
+  margin-top: 16px;
+}
+.projectInfo {
+  font-size: 16px;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.projectLinkContainer a {
+  color: #405ba1;
+}
+.feedbackContainer {
+  padding: 60px 24px;
+}
+.feedbackTitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.feedback {
+  padding: 24px 16px;
+  width: 270px;
+}
+.feedbackInfo {
+  font-size: 14px;
+}
+.feedbackFrom {
+  color: #1866af;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+.aspirationContainer {
+  padding: 60px 24px;
+}
+.aspiration {
+  font-size: 24px;
+}
+footer {
+  padding: 40px 0px;
+  flex-direction: column-reverse;
+}
+.copyright {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.contactMe {
+  display: none;
+}
+.SNSIconContainer img:nth-child(1),
+.SNSIconContainer img:nth-child(2) {
+  margin-right: 20px;
+}

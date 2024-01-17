@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8WER3CFRM8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8WER3CFRM8");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" media="(max-width:390px)" href="./responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,10 +53,17 @@
           <a
             class="headerLink github"
             href="https://github.com/rlafl7942"
+            onclick="onClickButton('github')"
             target="_blank"
             >Github Link</a
           >
-          <a class="headerLink resume" href="#" target="_blank">Resume Link</a>
+          <a
+            class="headerLink resume"
+            href="#"
+            onclick="onClickButton('resume')"
+            target="_blank"
+            >Resume Link</a
+          >
         </div>
       </div>
       <div class="headerRight">
@@ -88,8 +111,6 @@
         <img src="./asset/javascript_icon.png" />
         <img src="./asset/react_icon.png" />
         <img src="./asset/redux_icon.png" />
-      </div>
-      <div class="iconContainer">
         <img src="./asset/git_icon.svg" />
         <img src="./asset/vscode_icon.svg" />
         <img src="./asset/github_icon.svg" />
@@ -271,18 +292,36 @@
     <!--포부 섹션-->
     <section class="aspirationContainer">
       <div class="aspiration">
-        꼼꼼함과 기술에 대한 집요함으로 어떤 문제든<br />
-        해결해내는 프론트엔드 개발자가 되겠습니다. <br />감사합니다! 😊
+        꼼꼼함과 기술에 대한 집요함으로<br />
+        어떤 문제든 해결해내는 프론트엔드 개발자가 되겠습니다. <br />감사합니다!
+        😊
       </div>
     </section>
     <footer>
       <div class="SNSIconContainer">
-        <img style="margin-right: 35px" src="./asset/facebook_icon.png" />
-        <img style="margin-right: 35px" src="./asset/insta_icon.png" />
+        <img src="./asset/facebook_icon.png" />
+        <img src="./asset/insta_icon.png" />
         <img src="./asset/Linkedin_icon.png" />
       </div>
       <div class="copyright">Copyright ©2024 All rights reserved</div>
       <a class="contactMe" href="#">Contact<br />Me</a>
     </footer>
+
+    <script>
+      function onClickButton(type) {
+        if (type == "github") {
+          //gtag("이벤트명", "액션명", {액션에 대한 상세내용})
+          gtag("event", "깃허브_버튼_클릭", {
+            event_category: "깃허브_버튼_클릭",
+            event_label: "깃허브_버튼_클릭",
+          });
+        } else if (type == "resume") {
+          gtag("event", "이력서_버튼_클릭", {
+            event_category: "이력서_버튼_클릭",
+            event_label: "이력서_버튼_클릭",
+          });
+        }
+      }
+    </script>
   </body>
 </html>
