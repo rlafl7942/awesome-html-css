@@ -176,11 +176,19 @@ header h1 b {
   font-weight: 400;
   line-height: 26px; /* 130% */
 }
-.iconContainer {
+/*.iconContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   place-items: center;
   place-content: center;
+}*/
+.iconContainer {
+  display: flex;
+  white-space: pre;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
 }
 .iconContainer img {
   width: 100px;
