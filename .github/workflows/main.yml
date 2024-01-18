@@ -25,4 +25,4 @@ jobs:
           aws s3 sync web s3://pda-portfolio1/
           
       - name: Invalidate cloudfront
-        run: aws cloudfront create-invalidation --distribution-id E1LFKM58HEIKXU --paths /* # Cloudfront ID로 변경
+        run: aws cloudfront create-invalidation --distribution-id E1LFKM58HEIKXU --paths "/*" # Cloudfront ID로 변경
