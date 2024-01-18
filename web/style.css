@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
@@ -186,10 +189,9 @@ header h1 b {
 }
 .iconContainer img:hover {
   /*transform: scale(1.5);*/
-  animation: hoverAnimation 0.5s infinite alternate;
-  z-index: 1;
+  animation: imgAnimation 0.5s infinite alternate;
 }
-@keyframes hoverAnimation {
+@keyframes imgAnimation {
   0% {
     transform: scale(1);
   }
@@ -335,6 +337,17 @@ header h1 b {
   font-style: normal;
   font-weight: 700;
   line-height: 25px; /* 125% */
+}
+.feedback:hover {
+  animation: feedbackAnimation 3s infinite alternate;
+}
+@keyframes feedbackAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 .aspirationContainer {
   background: #e6eeff;
