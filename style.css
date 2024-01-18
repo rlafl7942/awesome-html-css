@@ -44,7 +44,7 @@ header h1 {
   line-height: 125%; /* 80px */
   letter-spacing: -1.28px;
 }
-header h1 em {
+header h1 b {
   background: linear-gradient(
     99deg,
     #001f8f 3.58%,
@@ -261,6 +261,14 @@ header h1 em {
   border-radius: 16px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   object-fit: cover;
+}
+.myProject:nth-child(5) {
+  height: 290px;
+}
+.myProject:nth-child(5) img {
+  width: 500px;
+  object-fit: fill;
+  height: 160px;
 }
 .feedbackContainer {
   padding: 80px 0px 100px 0px;

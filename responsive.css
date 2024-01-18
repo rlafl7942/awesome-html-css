@@ -113,6 +113,14 @@ header h1 {
   padding: 24px 16px;
   flex-direction: column-reverse;
 }
+.myProject:nth-child(5) {
+  height: 490px;
+}
+.myProject:nth-child(5) img {
+  width: 310px;
+  object-fit: cover;
+  height: 232px;
+}
 .projectImgContainer img {
   width: 94px;
   height: 202px;
