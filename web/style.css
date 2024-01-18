@@ -53,11 +53,18 @@ header h1 b {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: blink 2s infinite alternate;
+  display: inline-block;
+  white-space: nowrap;
+  animation: typing 8s steps(40) infinite;
+  max-width: fit-content;
 }
-@keyframes blink {
-  to {
-    opacity: 0;
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
   }
 }
 .headerLinkContainer {
